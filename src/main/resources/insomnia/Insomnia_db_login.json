@@ -1,0 +1,326 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-06-11T05:03:56.330Z",
+	"__export_source": "insomnia.desktop.app:v5.14.9",
+	"resources": [
+		{
+			"_id": "wrk_515bf6eb8c6f443d8de8aed8489a64be",
+			"created": 1560224331044,
+			"description": "",
+			"modified": 1560224331044,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_8e7ae81ecc4f430e8f6249963750679b",
+			"color": null,
+			"created": 1560224331112,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1560224331112,
+			"name": "New Environment",
+			"parentId": "wrk_515bf6eb8c6f443d8de8aed8489a64be",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_299ed1552a0841d7b01537d1ed68f42f",
+			"cookies": [],
+			"created": 1560224331304,
+			"modified": 1560224331304,
+			"name": "Default Jar",
+			"parentId": "wrk_515bf6eb8c6f443d8de8aed8489a64be",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"created": 1560229301498,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1560229301498,
+			"modified": 1560229301498,
+			"name": "db_login",
+			"parentId": "wrk_515bf6eb8c6f443d8de8aed8489a64be",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_43ed6ed25a304e908c121b86a75591ae",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"angelricardo.uthh@gmail.com\",\n\t\"password\": \"admin\",\n\t\"registerAsAdmin\": true\n}"
+			},
+			"created": 1560224690275,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_fc287f03da8b43b78a9afb1a4f29830d",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1560227299825.5,
+			"method": "POST",
+			"modified": 1560229338303,
+			"name": "register",
+			"parameters": [
+				{
+					"id": "pair_9033e6a6be354e828cc109c8a5c27e99",
+					"name": "",
+					"value": ""
+				}
+			],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/auth/register",
+			"_type": "request"
+		},
+		{
+			"_id": "req_faa777cb666d4e81b24f2dd87cd7e292",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"angelricardo.uthh@gmail.com\",\n\t\"password\": \"admin\",\n\t\"deviceInfo\": {\n\t\t\"deviceId\": \"1\",\n\t\t\"deviceType\": \"DEVICE_TYPE_ANDROID\",\n\t\t\"notificationToken\": \"123\"\n\t}\n}"
+			},
+			"created": 1560225298103,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_82e45806676c4b72945cfe39d110e492",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1560227299725.5,
+			"method": "POST",
+			"modified": 1560229345882,
+			"name": "login",
+			"parameters": [],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/auth/login",
+			"_type": "request"
+		},
+		{
+			"_id": "req_a4d091b03f004dd9b80f6b67d3d6f1bf",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1560226917656,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_af4c39f3846a4d009b4d23325779fffe",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1560227299775.5,
+			"method": "GET",
+			"modified": 1560229343133,
+			"name": "registrationConfirmation",
+			"parameters": [
+				{
+					"id": "pair_a0042bb0f60142ff9d451136ee3fd83d",
+					"name": "token",
+					"value": "b0a42879-8ba3-4294-a71f-7b85e3f75b37"
+				}
+			],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/auth/registrationConfirmation",
+			"_type": "request"
+		},
+		{
+			"_id": "req_84fa0f930d254ab59b99c962411773ac",
+			"authentication": {},
+			"body": {},
+			"created": 1560227276455,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_5b134b8d3d1d4527b79f1b992b902847",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTYwMjI3MjM5LCJleHAiOjE1NjAyMjgxMzl9.6RUH0swNxDK4MC2xvJ1gcUvzA_tuUddMZFdJzVQ4sY2BC8RpKsfOjnvClJU_Z0K-LEdI-IjqnhOziPBxAyqHag"
+				}
+			],
+			"metaSortKey": -1560227299675.5,
+			"method": "GET",
+			"modified": 1560229348916,
+			"name": "user_me",
+			"parameters": [],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/user/me",
+			"_type": "request"
+		},
+		{
+			"_id": "req_c328fc237c274b309525ac5f2292c065",
+			"authentication": {},
+			"body": {},
+			"created": 1560227482569,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_374829745c9a4d96afdd776493025073",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTYwMjI3MjM5LCJleHAiOjE1NjAyMjgxMzl9.6RUH0swNxDK4MC2xvJ1gcUvzA_tuUddMZFdJzVQ4sY2BC8RpKsfOjnvClJU_Z0K-LEdI-IjqnhOziPBxAyqHag"
+				}
+			],
+			"metaSortKey": -1560227299625.5,
+			"method": "GET",
+			"modified": 1560229351470,
+			"name": "user_admins",
+			"parameters": [],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/user/admins",
+			"_type": "request"
+		},
+		{
+			"_id": "req_05b739b7351f47f5be22a64402001ada",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"angelricardo.uthh@gmail.com\",\n\t\"password\": \"admin\",\n\t\"deviceInfo\": {\n\t\t\"deviceId\": \"1\",\n\t\t\"deviceType\": \"DEVICE_TYPE_ANDROID\",\n\t\t\"notificationToken\": \"123\"\n\t}\n}"
+			},
+			"created": 1560227642667,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_82e45806676c4b72945cfe39d110e492",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"id": "pair_b8a145cba3f5439eafcf538decceb518",
+					"name": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNTYwMjI3MjM5LCJleHAiOjE1NjAyMjgxMzl9.6RUH0swNxDK4MC2xvJ1gcUvzA_tuUddMZFdJzVQ4sY2BC8RpKsfOjnvClJU_Z0K-LEdI-IjqnhOziPBxAyqHag"
+				}
+			],
+			"metaSortKey": -1560227299575.5,
+			"method": "POST",
+			"modified": 1560229354353,
+			"name": "user_logout",
+			"parameters": [],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/user/logout",
+			"_type": "request"
+		},
+		{
+			"_id": "req_feb8252a57094df999bd68997962e496",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"refreshToken\": \"7d3c4488-0b0d-4dc5-b1a3-bc3aaba291db\"\n}"
+			},
+			"created": 1560227753889,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_82e45806676c4b72945cfe39d110e492",
+					"name": "Content-Type",
+					"value": "application/json"
+				},
+				{
+					"disabled": false,
+					"id": "pair_b8a145cba3f5439eafcf538decceb518",
+					"name": "",
+					"value": ""
+				}
+			],
+			"metaSortKey": -1560227299425.5,
+			"method": "POST",
+			"modified": 1560229364450,
+			"name": "refresh",
+			"parameters": [],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/auth/refresh",
+			"_type": "request"
+		},
+		{
+			"_id": "req_aaf344220fe94bfd966b1ae86e8b2c41",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"password\": \"admin\",\n\t\"confirmPassword\": \"admin\",\n\t\"token\": \"bba4fd6a-64e9-4c1f-8b9e-169e79926ba7\"\n}"
+			},
+			"created": 1560228825833,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_298e73264fed4478892ae9002d394820",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1560227299475.5,
+			"method": "POST",
+			"modified": 1560229359012,
+			"name": "reset",
+			"parameters": [],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/auth/password/reset",
+			"_type": "request"
+		},
+		{
+			"_id": "req_120983a3fe25404dac11c5247c26cef9",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"angelricardo.uthh@gmail.com\",\n\t\"password\": \"admin1\"\n}"
+			},
+			"created": 1560229097092,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_7f038a9f8ea64ec1b7bd99f40ed5deea",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"metaSortKey": -1560227299525.5,
+			"method": "POST",
+			"modified": 1560229356804,
+			"name": "resetlink",
+			"parameters": [],
+			"parentId": "fld_b6475d9f28e4410a84531ea8830ab130",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:9004/api/auth/password/resetlink",
+			"_type": "request"
+		}
+	]
+}
