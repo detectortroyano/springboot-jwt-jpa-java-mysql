@@ -24,7 +24,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @Profile("!dev")
 @Configuration
 @EnableWebSecurity(debug = true)
-@EnableJpaRepositories(basePackages = "com.accolite.pru.health.AuthApp.repository")
+@EnableJpaRepositories(basePackages = "com.login.jwt.AuthApp.repository")
 @EnableGlobalMethodSecurity(
         securedEnabled = true,
         jsr250Enabled = true,
